@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+<h1 class="post-title">{{ page.title }}</h1>
+<blockquote><span style="color: red; font-weight: 900">⚠ Sisältövaroitukset: ⚠</span>
+<dl>
+{% for cw_item in cw %}
+    <dt>{{ cw_item }}</dt>
+{% endfor %}
+</dl>
+</blockquote>
+{% include date_and_social_share.html %}
+{{ content }}
