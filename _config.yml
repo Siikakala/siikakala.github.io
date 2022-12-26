@@ -1,10 +1,28 @@
 remote_theme: abhinavs/moonwalk
 title: Ojamo.fi
-description: "Mira's writings: Blog, fanfiction, random memos - anything found between my two ears!"
+author: Mira Ojamo
+description: >
+  Mira's writings: Blog, fanfiction, random memos - anything found between my two ears!
+  The content is mixed between Finnish and English as I'm native finnish and fluent in English
+
 markdown: kramdown
 url: writings.ojamo.fi
+highlighter: rouge
+
 theme_config:
   appearance: "dark"
   show_navbar: true
   show_footer: false
   show_description: true
+  date_format: "%Y-%m-%d"
+  back_home_text: "home.."
+  show_copyright: true
+  show_projects: true
+  show_misc_list: true
+  show_reading_time: true
+
+  home:
+    title_projects: Fanfiction
+    title_misc_list: Details
+    title_blog: Blog
+    title_old_projects: Other things
