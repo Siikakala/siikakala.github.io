@@ -17,12 +17,15 @@ theme_config:
   date_format: "%Y-%m-%d"
   back_home_text: "home.."
   show_copyright: true
-  show_projects: true
-  show_misc_list: true
+  show_fanfics: true
+  show_projects: false
+  show_misc_list: false
   show_reading_time: true
 
   home:
-    title_projects: Fanfiction
+    title_fanfic: Fanfiction
+    title_projects: Projects
     title_misc_list: Details
     title_blog: Blog
     title_old_projects: Other things
+    desc_fanfic: Smutty fanfiction about Cyberpunk 2020 TTRPG campaing I'm playing in. Main ship is my character and her deceased wife. Mostly in Finnish
