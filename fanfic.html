@@ -1,7 +1,4 @@
 ---
-layout: big-cards
+layout: default
 ---
-{% capture cards %}
-{{ site.data.fanfic_entries.fanfics }}
-{% endcapture %}
-{% include big_card_list.html collection=cards %}
+{% include big_card_list.html collection=site.data.fanfic_entries.fanfics %}
