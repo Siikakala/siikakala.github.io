@@ -1,3 +1,4 @@
 remote_theme: abhinavs/moonwalk
 title: Mira's writings
 description: Blog, fanfiction, random memos - anything found between my two ears!
+markdown: kramdown
