@@ -8,7 +8,6 @@ description: >
 markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
-include: [cyberturku_fanfic/_data]
 
 theme_config:
   appearance: "dark"

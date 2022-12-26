@@ -20,6 +20,8 @@ layout: default
   <h2>{{ site.theme_config.home.title_fanfic }}</h2>
   <p>{{ site.theme_config.home.desc_fanfic }}</p>
   {% include card_list.html collection=site.cyberturku_fanfic.data.entries.fanfics %}
+  <p>bääää</p>
+  {% include card_list.html collection=site.data.entries.fanfics %}
 {% endif %}
 
 {% if site.theme_config.show_projects == true %}
