@@ -1,0 +1,26 @@
+.big-card {
+    padding: 1em;
+    border: 1px var(--text) solid;
+    width: 16em;
+    height: auto;
+    text-align: center;
+    font-size: 1em;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    margin-bottom: 0.8em;
+    border-radius: 0.5em;
+  
+    .header {
+      color: var(--links);
+      font-size: 1.3em;
+    }
+  
+    .body {
+      font-size: 1em;
+    }
+  
+    hr {
+      margin: 0.5em 0;
+    }
+  
+  }

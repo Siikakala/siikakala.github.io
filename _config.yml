@@ -1,9 +1,9 @@
 remote_theme: abhinavs/moonwalk
-title: Ojamo.fi
+title: Mira's writings
 author: Mira Ojamo
 description: >
-  Mira's writings: Blog, fanfiction, random memos - anything found between my two ears!
-  The content is mixed between Finnish and English as I'm native finnish and fluent in English
+  Mira's different writings: Blog, fanfiction, random memos - anything found between my two ears!
+  The content is mixed between Finnish and English as I'm native finnish and fluent in English.
 
 markdown: kramdown
 url: writings.ojamo.fi
