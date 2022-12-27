@@ -12,7 +12,7 @@ highlighter: rouge
 collections:
   fanfics:
     output: true
-    permalink: /:path/:title
+    permalink: /:path/:name
 
 defaults:
   -
