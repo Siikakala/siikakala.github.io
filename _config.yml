@@ -12,7 +12,7 @@ highlighter: rouge
 defaults:
   -
     scope:
-      path: "_posts/fanfics/cyberturku/"
+      path: "_posts/fanfics/cyberturku"
       type: "posts"
     values:
       layout: "fanfic_post"
