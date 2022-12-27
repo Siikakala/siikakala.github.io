@@ -9,9 +9,6 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
-exclude:
-  - "cyberturku_fanfic/README.md"
-
 theme_config:
   appearance: "dark"
   show_navbar: true
