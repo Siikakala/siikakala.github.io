@@ -14,7 +14,7 @@ permalink: "/:categories/:slug"
 defaults:
   -
     scope:
-      path: "_posts/fanfics"
+      path: "fanfics"
       type: "posts"
     values:
       layout: "fanfic_post"
