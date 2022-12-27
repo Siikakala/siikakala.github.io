@@ -12,7 +12,14 @@ highlighter: rouge
 collections:
   fanfics:
     output: true
-    permalink: /:path/:title
+
+defaults:
+  -
+    scope:
+      path: "_submodules"
+      type: "fanfics"
+    values:
+      permalink: /:categories/:title
 
 include:
   - _submodules
