@@ -10,9 +10,17 @@ url: writings.ojamo.fi
 highlighter: rouge
 
 collections:
-  fanfics/cyberturku:
+  cyberturku:
     output: true
-    permalink: /:collection/:title
+
+defaults:
+  -
+    scope:
+      path: "_fanfic/cyberturku"
+      type: "cyberturku"
+    values:
+      layout: "fanfic_post"
+      author: "Mira Ojamo"
 
 theme_config:
   appearance: "dark"
