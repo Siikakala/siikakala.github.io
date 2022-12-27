@@ -9,14 +9,6 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
-collections:
-  posts:
-    output: true
-    permalink: /:path
-
-include:
-  - _submodules
-
 theme_config:
   appearance: "dark"
   show_navbar: true
@@ -38,3 +30,6 @@ theme_config:
     title_blog: Blog
     title_old_projects: Other things
     desc_fanfic: Smutty fanfiction about Cyberpunk 2020 TTRPG campaing I'm playing in. Main ship is my character and her deceased wife. Mostly in Finnish
+
+plugins:
+  - jemoji
