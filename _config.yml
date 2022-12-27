@@ -16,7 +16,7 @@ collections:
 defaults:
   -
     scope:
-      path: "fanfics/cyberturku"
+      path: "fanfics/cyberturku/"
       type: "fanfics"
     values:
       layout: "fanfic_post"
