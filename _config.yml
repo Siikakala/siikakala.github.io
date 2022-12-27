@@ -14,19 +14,7 @@ collections:
     output: false
   fanfics:
     output: true
-
-defaults:
-  -
-    scope:
-      path: "cyberturku"
-      type: "fanfics"
-    values:
-      layout: "fanfic_post"
-      author: "Mira Ojamo"
-      categories:
-        - fanfics
-        - cyberturku
-      permalink: /:categories/:title
+    permalink: /:path/:title
 
 theme_config:
   appearance: "dark"
