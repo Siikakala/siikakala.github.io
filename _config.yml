@@ -12,6 +12,7 @@ highlighter: rouge
 collections:
   fanfics:
     output: true
+    permalink: "/:path/:title"
 
 defaults:
   -
@@ -24,7 +25,6 @@ defaults:
       categories:
         - fanfics
         - cyberturku
-      permalink: "/:categories/:slug"
 
 theme_config:
   appearance: "dark"
