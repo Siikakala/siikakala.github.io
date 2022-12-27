@@ -20,7 +20,7 @@ defaults:
       categories:
         - fanfics
         - cyberturku
-      permalink: "/:categories/:title"
+      permalink: "/:categories/:slug"
 
 theme_config:
   appearance: "dark"
