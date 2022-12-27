@@ -9,14 +9,15 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
+permalink: "/:categories/:slug"
+
 defaults:
   -
     scope:
-      path: "fanfics"
+      path: "_posts/fanfics"
       type: "posts"
     values:
       layout: "fanfic_post"
-      permalink: "/:categories/:title"
 
 theme_config:
   appearance: "dark"
