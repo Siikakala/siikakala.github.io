@@ -15,7 +15,7 @@ collections:
     permalink: /:path
 
 include:
-  - _submudles
+  - _submodules
 
 theme_config:
   appearance: "dark"
