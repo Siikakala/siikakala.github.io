@@ -22,9 +22,10 @@ defaults:
 
 include:
   - _submodules
+  - _fanfics
 
 exclude:
-  - _submodules\cyberturku_fanfic\README.md
+  - _submodules/cyberturku_fanfic/README.md
 
 theme_config:
   appearance: "dark"
