@@ -10,12 +10,15 @@ url: writings.ojamo.fi
 highlighter: rouge
 
 collections:
-  - submodules
+  submodules:
+    output: false
+  fanfics:
+    output: true
 
 defaults:
   -
     scope:
-      path: "fanfics/cyberturku"
+      path: "_fanfics/cyberturku"
       type: "posts"
     values:
       layout: "fanfic_post"
