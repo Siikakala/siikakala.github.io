@@ -16,12 +16,15 @@ collections:
 defaults:
   -
     scope:
-      path: "_submodules"
+      path: "_fanfics"
     values:
       permalink: /:categories/:title
 
 include:
   - _submodules
+
+exclude:
+  - _submodules\cyberturku_fanfic\README.md
 
 theme_config:
   appearance: "dark"
