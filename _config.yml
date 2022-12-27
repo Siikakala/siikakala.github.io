@@ -9,11 +9,15 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
+collections:
+  fanfics:
+    output: true
+
 defaults:
   -
     scope:
-      path: "_fanfics/cyberturku"
-      type: "posts"
+      path: "fanfics/cyberturku"
+      type: "fanfics"
     values:
       layout: "fanfic_post"
       author: "Mira Ojamo"
