@@ -9,11 +9,6 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
-collections:
-  fanfics:
-    output: true
-    permalink: /:path/:name
-
 defaults:
   -
     scope:
@@ -22,9 +17,6 @@ defaults:
     values:
       layout: "fanfic_post"
       permalink: "/:categories/:title"
-
-include:
-  - _fanfics
 
 theme_config:
   appearance: "dark"
