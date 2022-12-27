@@ -10,8 +10,6 @@ url: writings.ojamo.fi
 highlighter: rouge
 
 collections:
-  submodules:
-    output: false
   fanfics:
     output: true
     permalink: /:path/:title
