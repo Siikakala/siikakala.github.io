@@ -9,10 +9,13 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
+collections:
+  - submodules
+
 defaults:
   -
     scope:
-      path: "_posts/fanfics/cyberturku"
+      path: "fanfics/cyberturku"
       type: "posts"
     values:
       layout: "fanfic_post"
