@@ -18,15 +18,18 @@
             :{{ item.language }}:
           {% endcase %}
           {% case item.highlight %}
-          {% when "WIP" %}
-            &nbsp;<mark style="background-color:sandybrown;">{{ item.highlight }}</mark>
-            {% else %}
-            &nbsp;<mark>{{ item.highlight }}</mark>
+              {% when "WIP" %}
+              &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
+              {% else %}
+              &nbsp;<mark>{{ item.highlight }}</mark>
           {% endcase %}
-          {% if item.nsfw %}
-            &nbsp;<mark style="background-color: red;">NSFW</mark>
-          {% else %}
-            &nbsp;<mark>SFW</mark>
+          {% if item.nsfw != nil %}
+              {% case item.nsfw %}
+                  {% when "yes", "y", true %}
+                      &nbsp;<mark class="nsfw-mark">NSFW</mark>
+                  {% when "no", "n", false %}
+                      &nbsp;<mark>SFW</mark>
+              {% endcase %}
           {% endif %}
            <br />
           {% for tag in item.tags %}
