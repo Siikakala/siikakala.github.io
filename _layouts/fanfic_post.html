@@ -7,8 +7,9 @@ layout: default
 {% include date_and_social_share.html %}
 {% if page.cw %}
 <blockquote class="content_warning">
+    <p>⚠ Sisältövaroitukset: ⚠</p>
     <dl>
-        <dt>⚠ Sisältövaroitukset: ⚠</dt><dt></dt>
+        <dt></dt><dt></dt>
         {% for cw_item in page.cw %}
             <dd>{{ cw_item }}</dd>
         {% endfor %}

@@ -1,11 +1,19 @@
 .content_warning {
     blockquote {
         padding: 0.3em;
+        margin: 0;
         text-align: center;
-        min-width: fit-content(1em);
+        min-width: fit-content;
+    }
+
+    p {
+        color: red; 
+        font-weight: 900;
     }
 
     dl {
+        margin: 0;
+        padding: 0.1em;
         display: grid;
         grid-auto-flow: row;
         grid-auto-columns: 1fr;
@@ -13,7 +21,9 @@
 
     dt {
         grid-row: 1;
-        color: red; 
-        font-weight: 900;
+    }
+
+    dd {
+        min-width: fit-content;
     }
 }
