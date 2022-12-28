@@ -6,14 +6,22 @@
           <span class="header">
             {{ item.title }}
   
-            {% if item.highlight %}
-              <mark>{{ item.highlight }}</mark>
-            {% endif %}
-  
           </span>
   
           <hr />
-          {% for tag in page.tags %}
+          {% if item.language %}
+            :flag_{{ item.language }}:
+          {% endif %}
+          {% if item.highlight %}
+            &nbsp;<mark>{{ item.highlight }}</mark>
+          {% endif %}
+          {% if item.nsfw %}
+            &nbsp;<mark style="background-color: red;">NSFW</mark>
+          {% else %}
+            &nbsp;<mark>SFW</mark>
+          {% endif %}
+           <br />
+          {% for tag in item.tags %}
             <span class="tag">{{ tag }}</span>
           {% endfor %}
   
