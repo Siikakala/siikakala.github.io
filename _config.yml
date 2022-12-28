@@ -9,7 +9,7 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
-permalink: "/:categories/:slug"
+permalink: /:categories/:slug
 
 defaults:
   -
