@@ -14,6 +14,8 @@
             :finland: 
             {% when "en", "english" %}
             :us:
+            {% else %}
+            :{{ item.language }}:
           {% endcase %}
           {% case item.highlight %}
           {% when "WIP" %}
