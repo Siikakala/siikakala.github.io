@@ -23,7 +23,7 @@
                 {% else %}
                 &nbsp;<mark>{{ item.highlight }}</mark>
             {% endcase %}
-            {% if item.nsfw %}
+            {% if item.nsfw != nil %}
                 {% case item.nsfw %}
                     {% when "yes", "y" %}
                         &nbsp;<mark class="nsfw-mark">NSFW</mark>
