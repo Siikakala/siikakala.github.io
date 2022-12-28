@@ -1,0 +1,19 @@
+.content_warning {
+    blockquote {
+        padding: 0.3em;
+        text-align: center;
+        min-width: fit-content(1em);
+    }
+
+    dl {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-columns: 1fr;
+    }
+
+    dt {
+        grid-row: 1;
+        color: red; 
+        font-weight: 900;
+    }
+}

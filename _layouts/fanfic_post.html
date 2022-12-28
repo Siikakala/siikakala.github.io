@@ -6,9 +6,9 @@ layout: default
 <h1 class="post-title">{{ page.title }}</h1>
 {% include date_and_social_share.html %}
 {% if page.cw %}
-<blockquote>
+<blockquote class="content_warning">
     <dl>
-        <dt><span style="color: red; font-weight: 900">⚠ Sisältövaroitukset: ⚠</span></dt>
+        <dt>⚠ Sisältövaroitukset: ⚠</dt><dt></dt>
         {% for cw_item in page.cw %}
             <dd>{{ cw_item }}</dd>
         {% endfor %}
