@@ -25,14 +25,35 @@
   
   }
 
+  .nsfw-mark {
+    background-color:crimson;
+  }
+
+  .wip-mark {
+    background-color:sandybrown;
+  }
+
+  .emoji {
+    display: inline;
+    margin: -4px auto;
+    padding-inline: 0.3em;
+}
+
   @media screen and (max-width: 600px) {
     ul.horizontal-list li.big-card {
-      width: 100%;
       display: block;
       margin-bottom: 1em;
       margin-left: 1em;
       a, .header {
         font-size: 1em;
       }
+    }
+
+    ul.horizontal-list {
+        width: 100%;
+    }
+
+    li.big-card {
+        width: 48%;
     }
   }

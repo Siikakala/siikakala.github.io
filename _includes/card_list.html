@@ -1,0 +1,44 @@
+<ul class="horizontal-list">
+    {% for item in include.collection %}
+
+    <li class="card">
+        <a href="{{ item.url }}">
+            <span class="header">
+                {{ item.title }}
+
+            </span>
+
+            <hr />
+            {% case item.language %}
+                {% when "fi", "finnish" %}
+                :finland:
+                {% when "en", "english" %}
+                :us:
+                {% else %}
+                :{{ item.language }}:
+            {% endcase %}
+            {% case item.highlight %}
+                {% when "WIP" %}
+                &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
+                {% else %}
+                &nbsp;<mark>{{ item.highlight }}</mark>
+            {% endcase %}
+            {% if item.nsfw %}
+                {% case item.nsfw %}
+                    {% when "yes", "y" %}
+                        &nbsp;<mark class="nsfw-mark">NSFW</mark>
+                    {% when "no", "n" %}
+                        &nbsp;<mark>SFW</mark>
+                {% endcase %}
+            {% endif %}
+            
+            {% if item.desc %}
+            <p class="body">
+                {{ item.desc }}
+            </p>
+            {% endif %}
+        </a>
+    </li>
+
+    {% endfor %}
+</ul>
