@@ -9,9 +9,12 @@
           </span>
   
           <hr />
-          {% if item.language %}
-            :flag_{{ item.language }}:
-          {% endif %}
+          {% case item.language %}
+            {% when "fi", "finnish" %}
+            :finnish:
+            {% when "en", "english" %}
+            :us:
+          {% endcase %}
           {% if item.highlight %}
             &nbsp;<mark>{{ item.highlight }}</mark>
           {% endif %}
