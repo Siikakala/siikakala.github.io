@@ -1,14 +1,14 @@
-.content_warning {
-    blockquote {
-        padding: 0.3em;
-        margin-left: 1em;
-        margin-top: 1em;
-        margin-bottom: -1em;
-        max-width: fit-content;
-    }
+blockquote.content_warning {
+    padding: 0.3em;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    max-width: fit-content;
+}
 
+.content_warning {
     p {
-        color: red; 
+        color: red;
         font-weight: 900;
         text-align: center;
     }
