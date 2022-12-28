@@ -21,6 +21,7 @@ defaults:
 
 theme_config:
   appearance: "dark"
+  appearance_toggle: true
   show_navbar: true
   show_footer: false
   show_description: true
