@@ -38,22 +38,3 @@
     margin: -4px auto;
     padding-inline: 0.3em;
 }
-
-  @media screen and (max-width: 600px) {
-    ul.horizontal-list li.big-card {
-      display: block;
-      margin-bottom: 1em;
-      margin-left: 1em;
-      a, .header {
-        font-size: 1em;
-      }
-    }
-
-    ul.horizontal-list {
-        width: 100%;
-    }
-
-    li.card {
-        width: 48%;
-    }
-  }
