@@ -25,9 +25,9 @@
             {% endcase %}
             {% if item.nsfw != nil %}
                 {% case item.nsfw %}
-                    {% when "yes", "y" %}
+                    {% when "yes", "y", true %}
                         &nbsp;<mark class="nsfw-mark">NSFW</mark>
-                    {% when "no", "n" %}
+                    {% when "no", "n", false %}
                         &nbsp;<mark>SFW</mark>
                 {% endcase %}
             {% endif %}
