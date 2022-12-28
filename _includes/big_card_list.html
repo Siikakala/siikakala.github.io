@@ -15,9 +15,12 @@
             {% when "en", "english" %}
             :us:
           {% endcase %}
-          {% if item.highlight %}
+          {% case item.highlight %}
+          {% when "WIP" %}
+            &nbsp;<mark style="background-color:sandybrown;">{{ item.highlight }}</mark>
+            {% else %}
             &nbsp;<mark>{{ item.highlight }}</mark>
-          {% endif %}
+          {% endcase %}
           {% if item.nsfw %}
             &nbsp;<mark style="background-color: red;">NSFW</mark>
           {% else %}
@@ -28,11 +31,11 @@
             <span class="tag" style="background-color: #181b21;">{{ tag }}</span>
           {% endfor %}
   
-          {% if item.long_desc != false %}
+          {% if item.long_desc %}
           <p class="body">
             {{ item.long_desc }}
           </p>
-          {% elsif item.desc != false %}
+          {% elsif item.desc %}
           <p class="body">
             {{ item.desc }}
           </p>
