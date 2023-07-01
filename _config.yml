@@ -36,6 +36,7 @@ theme_config:
   back_home_text: "home.."
   show_copyright: true
   show_fanfics: true
+  show_blow: true
   show_projects: false
   show_misc_list: false
   show_reading_time: true

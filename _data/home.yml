@@ -2,11 +2,8 @@ navbar_entries:
   - title: writings.ojamo.fi
     url: https://writings.ojamo.fi/
 
+  - title: Blog
+    url: blog
+
   - title: Fanfiction
     url: fanfic
-
-project_entries:
-  - title: Ensimmäinen yö Turussa
-    url: cyberturku_fanfic/first_christmas_in_turku
-    desc: In Finnish. Smutty fanfiction about my Cyberpunk 2020 TTRPG character and her deceased wife.
-    highlight: WIP
