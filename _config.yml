@@ -18,6 +18,12 @@ defaults:
       type: "posts"
     values:
       layout: "fanfic_post"
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "fanfic_post"
 
 theme_config:
   appearance: "dark"
@@ -38,9 +44,10 @@ theme_config:
     title_fanfic: Fanfiction
     title_projects: Projects
     title_misc_list: Details
-    title_blog: Blog
+    title_blog: Personal Blog
     title_old_projects: Other things
     desc_fanfic: Smutty fanfiction about Cyberpunk 2020 TTRPG campaing I'm playing in. Main ship is my character and her deceased wife. Mostly in Finnish
+    desc_blog: Personal blog. Rambling about life, finnish conventions, work (generalized, NDA), D&D, DMing, LAN parties, and ..life. Mostly in English
 
 plugins:
   - jemoji

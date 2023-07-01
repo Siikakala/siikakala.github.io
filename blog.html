@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+<header>
+  <h1>Personal blog</h1>
+</header>
+<p>{{ site.theme_config.home.desc_blog }}</p>
+
+{% include big_card_list.html collection=site.data.blog_entries.blog %}
