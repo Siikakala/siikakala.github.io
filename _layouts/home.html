@@ -18,7 +18,8 @@ layout: default
 
 {% if site.theme_config.show_blog == true %}
   <h2>{{ site.theme_config.home.title_blog }}</h2>
-  {% include post_list.html %}
+  <p>{{ site.theme_config.home.desc_blog }}</p>
+  {% include card_list.html collection=site.data.blog_entries.blog %}
 {% endif %}
 
 {% if site.theme_config.show_fanfics == true %}
