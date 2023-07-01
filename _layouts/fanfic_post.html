@@ -7,7 +7,7 @@ layout: default
 {% include date_and_social_share.html %}
 {% if page.cw %}
 <blockquote class="content_warning">
-    <p>:warning: Sisältövaroitukset :warning:</p>
+    <p>:warning: {% if page.language != en %}Sisältövaroitukset{% else %}Content warnings{% endif %} :warning:</p>
     <dl>
         <dt></dt><dt></dt>
         {% for cw_item in page.cw %}
