@@ -1,3 +1,6 @@
 [submodule "cyberturku_fanfic"]
 	path = _submodules/cyberturku_fanfic
 	url = https://github.com/Siikakala/cyberturku_fanfic
+[submodule "_submodules/blog"]
+	path = _submodules/blog
+	url = https://github.com/Siikakala/blog.git
