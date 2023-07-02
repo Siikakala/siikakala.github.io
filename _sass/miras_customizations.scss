@@ -31,7 +31,7 @@
     --new-mark: #FFD700;
   }
 
-  mark[data-theme="dark"] {
+  :root[data-theme="dark"] {
     --nsfw-mark: crimson;
     --wip-mark: rgb(238, 127, 29);
     --new-mark: #AA6C39;
