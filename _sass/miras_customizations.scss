@@ -25,39 +25,27 @@
 
   }
 
-  :root .nsfw-mark {
-    --custom-marks: rgb(255, 95, 127);
+  :root {
+    --nsfw-mark: rgb(255, 95, 127);
+    --wip-mark: sandybrown;
+    --new-mark: #FFD700;
   }
 
-  :root .wip-mark {
-    --custom-marks: sandybrown;
-  }
-
-  :root .new-mark {
-    --custom-marks: #FFD700;
-  }
-
-  .nsfw-mark[data-theme="dark"] {
-    --custom-marks: crimson;
-  }
-
-  .wip-mark[data-theme="dark"] {
-    --custom-marks: rgb(238, 127, 29);
-  }
-
-  .new-mark[data-theme="dark"] {
-    --custom-marks: #AA6C39;
+  mark[data-theme="dark"] {
+    --nsfw-mark: crimson;
+    --wip-mark: rgb(238, 127, 29);
+    --new-mark: #AA6C39;
   }
 
   .nsfw-mark {
-    background-color: var(--custom-marks);
+    background-color: var(--sfw-mark);
     color: var(--text-secondary);
   }
   .wip-mark {
-    background-color: var(--custom-marks);
+    background-color: var(--wip-mark);
   }
   .new-mark {
-    background-color: var(--custom-marks);
+    background-color: var(--new-mark);
   }
 
   .emoji {
