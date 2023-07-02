@@ -20,6 +20,8 @@
             {% case item.highlight %}
                 {% when "WIP" %}
                 &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
+                {% when "New" %}
+                &nbsp;<mark class="new-mark">✨ {{ item.highlight }} ✨</mark>
                 {% else %}
                 &nbsp;<mark>{{ item.highlight }}</mark>
             {% endcase %}
@@ -31,7 +33,7 @@
                         &nbsp;<mark>SFW</mark>
                 {% endcase %}
             {% endif %}
-            
+
             {% if item.desc %}
             <p class="body">
                 {{ item.desc }}
