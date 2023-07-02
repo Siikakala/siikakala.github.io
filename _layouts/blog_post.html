@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+<h1 class="post-title">{{ page.title }}</h1>
+{% include long_date_and_social_share.html %}
+{% if page.cw %}
+<blockquote class="content_warning">
+    <p>:warning: {% if page.language == "fi" %}Sisältövaroitukset{% else %}Content warnings{% endif %} :warning:</p>
+    <dl>
+        <dt></dt><dt></dt>
+        {% for cw_item in page.cw %}
+            <dd>{{ cw_item }}</dd>
+        {% endfor %}
+    </dl>
+</blockquote>
+{% endif %}
+{{ content }}
