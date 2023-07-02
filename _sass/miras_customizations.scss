@@ -25,34 +25,30 @@
 
   }
 
-  html {
-    --wip-mark: sandybrown;
-    --nsfw-mark: rgb(255, 95, 127);
-    --new-mark: #FFD700;
-  }
-  @mixin miras-darkness {
-    html {
-      --wip-mark: rgb(238, 127, 29);
-      --nsfw-mark: crimson;
-      --new-mark: #AA6C39;
-    };
-  }
-  html[data-theme="dark"] { @include miras-darkness; }
-  @media (prefers-color-scheme: dark) {
-    body[data-theme="auto"] { @include miras-darkness; }
-  }
-
   .nsfw-mark {
-    background-color: var(--nsfw-mark);
+    background-color: rgb(255, 95, 127);
     color: var(--text-secondary);
   }
 
   .wip-mark {
-    background-color: var(--wip-mark);
+    background-color: sandybrown;
   }
 
   .new-mark {
-    background-color: var(--new-mark);
+    background-color: #FFD700;
+  }
+
+  .dark .nsfw-mark {
+    background-color: crimson;
+    color: var(--text-secondary);
+  }
+
+  .dark .wip-mark {
+    background-color: rgb(238, 127, 29);
+  }
+
+  .dark .new-mark {
+    background-color: #AA6C39;
   }
 
   .emoji {
