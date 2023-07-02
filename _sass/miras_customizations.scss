@@ -25,39 +25,39 @@
 
   }
 
-  .nsfw-mark[data-theme="light"] {
-    --background-color: rgb(255, 95, 127);
+  :root .nsfw-mark {
+    --custom-marks: rgb(255, 95, 127);
   }
 
-  .wip-mark[data-theme="light"] {
-    --background-color: sandybrown;
+  :root .wip-mark {
+    --custom-marks: sandybrown;
   }
 
-  .new-mark[data-theme="light"] {
-    --background-color: #FFD700;
+  :root .new-mark {
+    --custom-marks: #FFD700;
   }
 
   .nsfw-mark[data-theme="dark"] {
-    --background-color: crimson;
+    --custom-marks: crimson;
   }
 
   .wip-mark[data-theme="dark"] {
-    --background-color: rgb(238, 127, 29);
+    --custom-marks: rgb(238, 127, 29);
   }
 
   .new-mark[data-theme="dark"] {
-    --background-color: #AA6C39;
+    --custom-marks: #AA6C39;
   }
 
   .nsfw-mark {
-    background-color: var(--background-color);
+    background-color: var(--custom-marks);
     color: var(--text-secondary);
   }
   .wip-mark {
-    background-color: var(--background-color);
+    background-color: var(--custom-marks);
   }
   .new-mark {
-    background-color: var(--background-color);
+    background-color: var(--custom-marks);
   }
 
   .emoji {
