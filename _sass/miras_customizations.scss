@@ -37,6 +37,7 @@
       --new-mark: #AA6C39;
     };
   }
+  html[data-theme="dark"] { @include dark-appearance; }
 
   .nsfw-mark {
     background-color: var(--nsfw-mark);
