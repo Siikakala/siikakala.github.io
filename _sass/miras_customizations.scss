@@ -28,13 +28,13 @@
   html {
     --wip-mark: sandybrown;
     --nsfw-mark: rgb(255, 95, 127);
-    --new-mark: #AA6C39;
+    --new-mark: #FFD700;
   }
   @mixin dark-appearance {
     html {
       --wip-mark: rgb(238, 127, 29);
       --nsfw-mark: crimson;
-      --new-mark: #FFD700;
+      --new-mark: #AA6C39;
     };
   }
 
