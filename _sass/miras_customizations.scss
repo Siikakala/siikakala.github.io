@@ -28,7 +28,7 @@
   :root {
     --nsfw-mark: rgb(255, 95, 127);
     --wip-mark: sandybrown;
-    --new-mark: #FFD700;
+    --new-mark: #E5A06A;
   }
 
   :root[data-theme="dark"] {
@@ -39,7 +39,7 @@
 
   .nsfw-mark {
     background-color: var(--nsfw-mark);
-    color: var(--text-secondary);
+    color: var(--headings);
   }
   .wip-mark {
     background-color: var(--wip-mark);
