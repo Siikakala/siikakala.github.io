@@ -30,16 +30,16 @@
     --nsfw-mark: rgb(255, 95, 127);
     --new-mark: #FFD700;
   }
-  @mixin dark-appearance {
+  @mixin miras-darkness {
     html {
       --wip-mark: rgb(238, 127, 29);
       --nsfw-mark: crimson;
       --new-mark: #AA6C39;
     };
   }
-  html[data-theme="dark"] { @include dark-appearance; }
+  html[data-theme="dark"] { @include miras-darkness; }
   @media (prefers-color-scheme: dark) {
-    body[data-theme="auto"] { @include dark-appearance; }
+    body[data-theme="auto"] { @include miras-darkness; }
   }
 
   .nsfw-mark {
