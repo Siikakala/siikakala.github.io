@@ -1,26 +1,28 @@
 <ul class="horizontal-list">
     {% for item in include.collection %}
-  
+
       <li class="big-card">
         <a href="{{ item.url }}">
           <span class="header">
             {{ item.title }}
-  
+
           </span>
-  
+
           <hr />
           {% case item.language %}
             {% when "fi", "finnish" %}
-            :finland: 
+            :finland:
             {% when "en", "english" %}
             :us:
             {% else %}
             :{{ item.language }}:
           {% endcase %}
           {% case item.highlight %}
-              {% when "WIP" %}
-              &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
-              {% else %}
+            {% when "WIP" %}
+             &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
+            {% when "New" %}
+              &nbsp;<mark class="new-mark">✨ {{ item.highlight }} ✨</mark>
+            {% else %}
               &nbsp;<mark>{{ item.highlight }}</mark>
           {% endcase %}
           {% if item.nsfw != nil %}
@@ -35,7 +37,7 @@
           {% for tag in item.tags %}
             <span class="tag" style="background-color: #181b21;">{{ tag }}</span>
           {% endfor %}
-  
+
           {% if item.long_desc %}
           <p class="body">
             {{ item.long_desc }}
@@ -47,6 +49,6 @@
           {% endif %}
         </a>
       </li>
-  
+
     {% endfor %}
   </ul>
