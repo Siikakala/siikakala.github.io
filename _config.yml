@@ -23,7 +23,7 @@ defaults:
       path: "blog"
       type: "posts"
     values:
-      layout: "fanfic_post"
+      layout: "blog_post"
 
 theme_config:
   appearance: "dark"
