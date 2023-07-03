@@ -20,7 +20,7 @@ layout: default
   <h2>{{ site.theme_config.home.title_blog }}</h2>
   <p>{{ site.theme_config.home.desc_blog }}</p>
   {% include card_list.html collection=site.data.blog_entries.blog %}
-  {% if {{ include.collection | size}} >= 3 %}
+  {% if {{ site.data.blog_entries.blog | size}} >= 3 %}
   <p>But wait, <a href="blog">there's more</a>!</p>
   {% endif %}
 {% endif %}
@@ -29,7 +29,7 @@ layout: default
   <h2>{{ site.theme_config.home.title_fanfic }}</h2>
   <p>{{ site.theme_config.home.desc_fanfic }}</p>
   {% include card_list.html collection=site.data.fanfic_entries.fanfics %}
-  {% if {{ include.collection | size}} >= 3 %}
+  {% if {{ site.data.fanfic_entries.fanfics | size}} >= 3 %}
   <p>But wait, <a href="fanfic">there's more</a>!</p>
   {% endif %}
 {% endif %}
