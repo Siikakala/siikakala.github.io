@@ -23,7 +23,8 @@ social:
 permalink: /:categories/:slug
 
 collections:
-  - characters
+  characters:
+    output: true
 
 defaults:
   - scope:
