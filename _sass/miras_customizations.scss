@@ -1,55 +1,62 @@
 .big-card {
-    padding: 1em;
-    border: 1px var(--text) solid;
-    width: 19em;
-    height: auto;
-    text-align: center;
+  padding: 1em;
+  border: 1px var(--text) solid;
+  width: 19em;
+  height: auto;
+  text-align: center;
+  font-size: 1em;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0.5em;
+
+  .header {
+    color: var(--links);
+    font-size: 1.3em;
+  }
+
+  .body {
     font-size: 1em;
-    align-items: center;
-    background-color: var(--bg-secondary);
-    margin-bottom: 0.8em;
-    border-radius: 0.5em;
-
-    .header {
-      color: var(--links);
-      font-size: 1.3em;
-    }
-
-    .body {
-      font-size: 1em;
-    }
-
-    hr {
-      margin: 0.5em 0;
-    }
-
   }
 
-  :root {
-    --nsfw-mark: rgb(255, 95, 127);
-    --wip-mark: sandybrown;
-    --new-mark: #E5A06A;
+  hr {
+    margin: 0.5em 0;
   }
 
-  :root[data-theme="dark"] {
-    --nsfw-mark: crimson;
-    --wip-mark: rgb(238, 127, 29);
-    --new-mark: #AA6C39;
-  }
+}
+img {
+  float: left;
+  max-width: 100em;
+  height: auto;
+}
 
-  .nsfw-mark {
-    background-color: var(--nsfw-mark);
-    color: var(--headings);
-  }
-  .wip-mark {
-    background-color: var(--wip-mark);
-  }
-  .new-mark {
-    background-color: var(--new-mark);
-  }
+:root {
+  --nsfw-mark: rgb(255, 95, 127);
+  --wip-mark: sandybrown;
+  --new-mark: #E5A06A;
+}
 
-  .emoji {
-    display: inline;
-    margin: -4px auto;
-    padding-inline: 0.3em;
+:root[data-theme="dark"] {
+  --nsfw-mark: crimson;
+  --wip-mark: rgb(238, 127, 29);
+  --new-mark: #AA6C39;
+}
+
+.nsfw-mark {
+  background-color: var(--nsfw-mark);
+  color: var(--headings);
+}
+
+.wip-mark {
+  background-color: var(--wip-mark);
+}
+
+.new-mark {
+  background-color: var(--new-mark);
+}
+
+.emoji {
+  display: inline;
+  margin: -4px auto;
+  padding-inline: 0.3em;
 }
