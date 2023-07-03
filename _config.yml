@@ -42,7 +42,7 @@ theme_config:
   appearance: "dark"
   appearance_toggle: true
   show_navbar: true
-  show_footer: true
+  show_footer: false
   show_description: true
   show_tags: true
   date_format: "%Y-%m-%d"
