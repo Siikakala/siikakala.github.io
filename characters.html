@@ -9,5 +9,6 @@ layout: default
 <p>{{ site.theme_config.home.desc_characters }}</p>
 
 {% for submodule in site.characters %}
-{% include big_card_list.html collection=site.characters %}
+<h2>{{ submodule }}</h2>
+{% include big_card_list.html collection=submodule %}
 {% endfor %}
