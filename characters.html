@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+<header>
+  <h1>Characters</h1>
+</header>
+<p>{{ site.theme_config.home.desc_characters }}</p>
+
+{% for submodule in site.characters %}
+{% include big_card_list.html collection=site.characters %}
+{% endfor %}

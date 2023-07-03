@@ -1,6 +1,8 @@
 remote_theme: abhinavs/moonwalk
 title: Mira's writings
 author: Mira Ojamo
+tagline: Mira's writing corner
+locale: en_US
 description: >
   Mira's different writings: Blog, fanfiction, random memos - anything found between my two ears!
   The content is mixed between Finnish and English as I'm native finnish and fluent in English.
@@ -9,17 +11,27 @@ markdown: kramdown
 url: writings.ojamo.fi
 highlighter: rouge
 
+social:
+  name: Mira Ojamo / Siikakala
+  links:
+    - https://instagrom.com/siikakala
+    - https://www.facebook.com/siikakala
+    - https://twitter.com/siikakala
+    - https://www.linkedin.com/in/siikakala
+    - https://github.com/siikakala
+
 permalink: /:categories/:slug
 
+collections:
+  - characters
+
 defaults:
-  -
-    scope:
+  - scope:
       path: "fanfics"
       type: "posts"
     values:
       layout: "fanfic_post"
-  -
-    scope:
+  - scope:
       path: "blog"
       type: "posts"
     values:
@@ -29,7 +41,7 @@ theme_config:
   appearance: "dark"
   appearance_toggle: true
   show_navbar: true
-  show_footer: false
+  show_footer: true
   show_description: true
   show_tags: true
   date_format: "%Y-%m-%d"

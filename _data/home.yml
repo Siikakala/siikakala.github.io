@@ -7,3 +7,6 @@ navbar_entries:
 
   - title: Fanfiction
     url: fanfic
+
+  - title: Characters
+    url: characters
