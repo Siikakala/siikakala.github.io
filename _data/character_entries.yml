@@ -1,4 +1,9 @@
 cyberturku:
   - title: Elena Dawnson
-    url: characters/cyberturku/elena
+    url: _characters/cyberturku/elena
     desc: Elena on hahmoni Cyberpunk 2020 kampanjassa.
+    tags: [Fictional, Alive, PC]
+  - title: Heidi Dawnson
+    url: _characters/cyberturku/heidi
+    desc: Heidi on Elenan edesmennyt Suomalainen vaimo
+    tags: [Fictional, Deceased, NPC]
