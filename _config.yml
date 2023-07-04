@@ -41,6 +41,10 @@ defaults:
       path: "characters"
     values:
       layout: "character_page"
+  - scope:
+      path: "_characters"
+    values:
+      layout: "character_page"
 
 theme_config:
   appearance: "dark"
@@ -69,3 +73,6 @@ theme_config:
 
 plugins:
   - jemoji
+
+include:
+  - _characters

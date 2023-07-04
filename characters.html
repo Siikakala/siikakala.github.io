@@ -10,5 +10,5 @@ layout: default
 
 {% for submodule in site.data.character_entries %}
 <h2>{{ submodule }}</h2>
-{% include big_card_list.html collection=site.data.blog_entries.blog %}
+{% include big_card_list.html collection=submodule %}
 {% endfor %}
