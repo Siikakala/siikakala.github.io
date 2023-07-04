@@ -44,6 +44,11 @@ defaults:
     values:
       layout: "character_page"
   - scope:
+      path: "_characters"
+    values:
+      layout: "character_page"
+      category: "characters"
+  - scope:
       path: "assets/images"
     values:
       image: true
