@@ -39,13 +39,13 @@ defaults:
     values:
       layout: "blog_post"
   - scope:
-      path: "characters"
-    values:
-      layout: "character_page"
-  - scope:
       path: "_characters"
     values:
       layout: "character_page"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 
 theme_config:
   appearance: "dark"
