@@ -10,5 +10,6 @@ layout: default
 
 {% for submodule in site.data.character_entries %}
 <h2>{{ submodule[0] | capitalize }}</h2>
-{% include big_card_list.html collection=submodule[1] %}
+{% assign module = submodule[1] %}
+{% include big_card_list.html collection=module %}
 {% endfor %}
