@@ -8,7 +8,7 @@ layout: default
 </header>
 <p>{{ site.theme_config.home.desc_characters }}</p>
 
-{% for submodule in site.characters %}
+{% for submodule in site.data.character_entries %}
 <h2>{{ submodule }}</h2>
-{% include character_page.html collection=submodule %}
+{% include big_card_list.html collection=site.data.blog_entries.blog %}
 {% endfor %}

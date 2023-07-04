@@ -9,22 +9,26 @@
             </span>
 
             <hr />
-            {% case item.language %}
-                {% when "fi", "finnish" %}
-                :finland:
-                {% when "en", "english" %}
-                :us:
-                {% else %}
-                :{{ item.language }}:
-            {% endcase %}
-            {% case item.highlight %}
-                {% when "WIP" %}
-                &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
-                {% when "New" %}
-                &nbsp;<mark class="new-mark">✨ {{ item.highlight }} ✨</mark>
-                {% else %}
-                &nbsp;<mark>{{ item.highlight }}</mark>
-            {% endcase %}
+            {% if item.language %}
+                {% case item.language %}
+                    {% when "fi", "finnish" %}
+                    :finland:
+                    {% when "en", "english" %}
+                    :us:
+                    {% else %}
+                    :{{ item.language }}:
+                {% endcase %}
+            {% endif %}
+            {% if item.highlight %}
+                {% case item.highlight %}
+                    {% when "WIP" %}
+                    &nbsp;<mark class="wip-mark">{{ item.highlight }}</mark>
+                    {% when "New" %}
+                    &nbsp;<mark class="new-mark">✨ {{ item.highlight }} ✨</mark>
+                    {% else %}
+                    &nbsp;<mark>{{ item.highlight }}</mark>
+                {% endcase %}
+            {% endif %}
             {% if item.nsfw != nil %}
                 {% case item.nsfw %}
                     {% when "yes", "y", true %}
@@ -33,7 +37,6 @@
                         &nbsp;<mark>SFW</mark>
                 {% endcase %}
             {% endif %}
-
             {% if item.desc %}
             <p class="body">
                 {{ item.desc }}
