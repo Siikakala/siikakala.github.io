@@ -22,11 +22,6 @@ social:
 
 permalink: /:categories/:slug
 
-collections:
-  characters:
-    output: true
-    permalink: /:collection/:name
-
 defaults:
   - scope:
       path: "fanfics"
@@ -39,12 +34,7 @@ defaults:
     values:
       layout: "blog_post"
   - scope:
-      path: ""
-      type: "characters"
-    values:
-      layout: "character_page"
-  - scope:
-      path: "_characters"
+      path: "characters"
     values:
       layout: "character_page"
       category: "characters"
@@ -80,6 +70,3 @@ theme_config:
 
 plugins:
   - jemoji
-
-include:
-  - _characters
