@@ -75,3 +75,6 @@ theme_config:
 
 plugins:
   - jemoji
+
+include:
+  - _characters
