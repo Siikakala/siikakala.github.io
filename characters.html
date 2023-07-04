@@ -9,6 +9,6 @@ layout: default
 <p>Here's different people mentioned in different parts of the site!</p>
 
 {% for submodule in site.data.character_entries %}
-<h2>{{ submodule[1] }}</h2>
+<h2>{{ submodule[0] }}</h2>
 {% include big_card_list.html collection=submodule %}
 {% endfor %}

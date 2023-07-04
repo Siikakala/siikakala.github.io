@@ -39,7 +39,8 @@ defaults:
     values:
       layout: "blog_post"
   - scope:
-      path: "_characters"
+      path: ""
+      type: "characters"
     values:
       layout: "character_page"
   - scope:
