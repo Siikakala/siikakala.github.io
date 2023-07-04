@@ -25,6 +25,7 @@ permalink: /:categories/:slug
 collections:
   characters:
     output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:
