@@ -7,3 +7,8 @@ cyberturku:
     url: characters/cyberturku/heidi
     desc: Heidi on Elenan edesmennyt Suomalainen vaimo
     tags: [Fictional, Deceased, NPC]
+dnd:
+  - title: Naqine
+    url: characters/dnd/naqine
+    desc: Naqine is my tiefling shadow sorceress in campaing Normyr
+    tags: [fictional, Alive, PC]

@@ -4,3 +4,6 @@
 [submodule "_submodules/blog"]
 	path = _submodules/blog
 	url = https://github.com/Siikakala/blog.git
+[submodule "_submodules/dnd_stories"]
+	path = _submodules/dnd_stories
+	url = https://github.com/Siikakala/dnd_stories.git
