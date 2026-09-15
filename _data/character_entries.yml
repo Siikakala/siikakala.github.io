@@ -12,3 +12,7 @@ dnd:
     url: characters/dnd/naqine
     desc: Naqine is my tiefling shadow sorceress in campaing Normyr
     tags: [fictional, Alive, PC]
+  - title: Astrid
+    url: characters/dnd/Astrid
+    desc: Astrid is my Völva character in AD&D Ravenloft campaing
+    tags: [fictional, Alive, PC]
