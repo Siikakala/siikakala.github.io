@@ -70,3 +70,4 @@ theme_config:
 
 plugins:
   - jemoji
+  - jekyll-remote-theme
