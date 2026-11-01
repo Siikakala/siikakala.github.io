@@ -39,7 +39,7 @@ layout: default
   <p>{{ site.theme_config.home.desc_podcasts }}</p>
   {% for campaign in site.data.podcast_entries %}
     <h3>Campaign: {{ campaign[0] | capitalize }}</h3>
-    {{ assign desc = site.campaigns_desc | where: "name", campaign[0] | first}}
+    {% assign desc = site.campaigns_desc | where: "name", campaign[0] | first %}
     <p>{{ desc.desc }}</p>
     {% assign module = campaign[1] %}
     {% include card_list.html collection=module %}
