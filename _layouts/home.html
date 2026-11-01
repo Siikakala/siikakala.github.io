@@ -37,10 +37,15 @@ layout: default
 {% if site.theme_config.show_podcasts == true %}
   <h2>{{ site.theme_config.home.title_podcasts }}</h2>
   <p>{{ site.theme_config.home.desc_podcasts }}</p>
-  {% include card_list.html collection=site.data.podcast_entries.podcasts %}
-  {% if site.data.podcast_entries.podcasts.size >= 3 %}
-  <p>But wait, <a href="podcasts">there's more</a>!</p>
-  {% endif %}
+  {% for campaign in site.data.podcast_entries %}
+    <h3>{{ campaign[0] | capitalize }}</h3>
+    <p>{{ site.campaigns_desc[campaign[0]] }}</p>
+    {% assign module = campaign[1] %}
+    {% include card_list.html collection=module %}
+    {% if site.data.podcast_entries.module.size >= 3 %}
+      <p>But wait, <a href="podcasts/{{ module }}">there's more</a>!</p>
+    {% endif %}
+  {% endfor %}
 {% endif %}
 
 {% if site.theme_config.show_misc_list == true %}
