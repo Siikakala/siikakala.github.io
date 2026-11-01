@@ -36,7 +36,11 @@ layout: default
 
 {% if site.theme_config.show_podcasts == true %}
   <h2>{{ site.theme_config.home.title_podcasts }}</h2>
+  <p>{{ site.theme_config.home.desc_podcasts }}</p>
   {% include card_list.html collection=site.data.podcast_entries.podcasts %}
+  {% if site.data.podcast_entries.podcasts.size >= 3 %}
+  <p>But wait, <a href="podcasts">there's more</a>!</p>
+  {% endif %}
 {% endif %}
 
 {% if site.theme_config.show_misc_list == true %}

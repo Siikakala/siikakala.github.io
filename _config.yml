@@ -72,6 +72,7 @@ theme_config:
     title_old_projects: Other things
     desc_fanfic: Smutty fanfiction about Cyberpunk 2020 TTRPG campaing I'm playing in. Main ship is my Australian character Elena and her now-deceased Finnish wife, Heidi. Mostly in Finnish
     desc_blog: Personal blog. Rambling about life, finnish conventions, work (generalized - NDA), D&D, DMing, LAN parties, and ..life. Mostly in English
+    desc_podcasts: AI generated podcasts about Dungeons & Dragons campaigns I have been in. The games and players are real, just the _podcasts_ use AI.
 
 plugins:
   - jemoji
