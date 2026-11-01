@@ -60,7 +60,7 @@ theme_config:
   show_copyright: true
   show_fanfics: true
   show_blog: true
-  show_projects: false
+  show_podcasts: true
   show_misc_list: false
   show_reading_time: true
 
