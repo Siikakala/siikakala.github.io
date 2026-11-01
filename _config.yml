@@ -43,6 +43,7 @@ defaults:
       type: "posts"
     values:
       layout: "blog_post"
+      category: "dalelands"
   - scope:
       path: "assets/images"
     values:
