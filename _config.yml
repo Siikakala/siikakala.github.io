@@ -39,6 +39,11 @@ defaults:
       layout: "character_page"
       category: "characters"
   - scope:
+      path: "podcasts"
+      type: "posts"
+    values:
+      layout: "blog_post"
+  - scope:
       path: "assets/images"
     values:
       image: true

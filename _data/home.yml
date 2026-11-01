@@ -10,3 +10,6 @@ navbar_entries:
 
   - title: Characters
     url: characters
+
+  - title: Podcasts
+    url: podcasts
