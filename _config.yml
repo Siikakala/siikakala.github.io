@@ -43,7 +43,6 @@ defaults:
       type: "posts"
     values:
       layout: "blog_post"
-      category: ["dalelands", "ravenloft"]
   - scope:
       path: "assets/images"
     values:
@@ -75,11 +74,17 @@ theme_config:
     desc_blog: Personal blog. Rambling about life, finnish conventions, work (generalized - NDA), D&D, DMing, LAN parties, and ..life. Mostly in English
     desc_podcasts: AI generated podcasts about Dungeons & Dragons campaigns I have been in. The games and players are real, just the podcasts use AI.
 
+collections:
+  dalelands:
+    output: true
+  ravenloft:
+    output: true
+
 campaigns_desc:
   - name: dalelands
     desc: Campaign from fall 2019 to spring 2021, set in the Dalelands. Uses D&D 3.0 ruleset.
   - name: ravenloft
-    desc: Campaign from winter 2026, which is still ongoing. Set in Ravenloft and uses AD&D 2e ruleset.
+    desc: Campaign started in winter 2026, which is still ongoing. Set in Ravenloft and uses AD&D 2e ruleset.
 
 plugins:
   - jemoji
