@@ -1,6 +1,1 @@
-podcasts:
-  - title: Dalelands - Episode 1
-    url: podcasts/Episode-1
-    desc: Dalelands - Episode 1. Session 0 - The introductions
-    language: en
-    tags: [D&D, Podcast]
+../_submodules/dnd_stories/_data/podcast_entries.yml
