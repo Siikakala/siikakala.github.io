@@ -10,7 +10,7 @@ layout: default
 
 {% for submodule in site.data.podcast_entries %}
 <h2>Campaign: {{ submodule[0] | capitalize }}</h2>
-<p>{{ site.campaigns_desc[submodule[0]] }}</p>
+<p>{{ site.campaigns_desc | where: submodule[0] }}</p>
 {% assign module = submodule[1] %}
 {% include big_card_list.html collection=module %}
 {% endfor %}
