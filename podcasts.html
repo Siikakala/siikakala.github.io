@@ -8,9 +8,9 @@ layout: default
 </header>
 <p>{{ site.theme_config.home.desc_podcasts }}</p>
 
-{% for submodule in site.data.podcast_entries %}
-<h2>Campaign: {{ submodule[0] | capitalize }}</h2>
-<p>{{ site.campaigns_desc[submodule[0]] }}</p>
-{% assign module = submodule[1] %}
+{% for campaign in site.data.podcast_entries %}
+<h2>Campaign: {{ campaign[0] | capitalize }}</h2>
+<p>{{ site.campaigns_desc[campaign[0]] }}</p>
+{% assign module = campaign[1] %}
 {% include big_card_list.html collection=module %}
 {% endfor %}
