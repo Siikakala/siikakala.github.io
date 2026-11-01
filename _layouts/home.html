@@ -39,10 +39,11 @@ layout: default
   <p>{{ site.theme_config.home.desc_podcasts }}</p>
   {% for campaign in site.data.podcast_entries %}
     <h3>Campaign: {{ campaign[0] | capitalize }}</h3>
-    <p>{{ site.campaigns_desc | where: campaign[0] }}</p>
+    {{ assign desc = site.campaigns_desc | where: "name", campaign[0] }}
+    <p>{{ desc.desc }}</p>
     {% assign module = campaign[1] %}
     {% include card_list.html collection=module %}
-    {% if site.data.podcast_entries.module.size >= 3 %}
+    {% if module.size >= 3 %}
       <p>But wait, <a href="podcasts">there's more</a>!</p>
     {% endif %}
   {% endfor %}

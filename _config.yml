@@ -76,8 +76,10 @@ theme_config:
     desc_podcasts: AI generated podcasts about Dungeons & Dragons campaigns I have been in. The games and players are real, just the podcasts use AI.
 
 campaigns_desc:
-  - dalelands: Campaign from fall 2019 to spring 2021, set in the Dalelands. Uses D&D 3.0 ruleset.
-  - ravenloft: Campaign from winter 2026, which is still ongoing. Set in Ravenloft and uses AD&D 2e ruleset.
+  - name: dalelands
+    desc: Campaign from fall 2019 to spring 2021, set in the Dalelands. Uses D&D 3.0 ruleset.
+  - name: ravenloft
+    desc: Campaign from winter 2026, which is still ongoing. Set in Ravenloft and uses AD&D 2e ruleset.
 
 plugins:
   - jemoji
