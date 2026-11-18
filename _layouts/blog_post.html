@@ -16,4 +16,7 @@ layout: default
     </dl>
 </blockquote>
 {% endif %}
+{% if page.image %}
+<img class="illustration" src="{{ page.image }}" alt="Illustration for {{ page.title }}" />
+{% endif %}
 {{ content }}
