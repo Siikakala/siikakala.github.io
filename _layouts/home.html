@@ -43,7 +43,7 @@ layout: default
     <p>{{ desc.desc }}</p>
     {% assign module = campaign[1] %}
     {% include card_list.html collection=module %}
-    {% if module.size >= 3 %}
+    {% if module.size > 3 %}
       <p>But wait, <a href="podcasts">there's more</a>!</p>
     {% endif %}
   {% endfor %}
